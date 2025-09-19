@@ -7,7 +7,7 @@ env:
   PROJECT_ID: ardent-case-465107-c9  # Replace with your GCP project ID
   GAR_LOCATION: us-central1        # Replace with your Artifact Registry region
   SERVICE: my-cloud-run-service  # Replace with your Cloud Run service name
-  GAR_REPO: gcr.io  # Replace with your Artifact Registry name
+  GAR_REPO: cloud-run-repo  # Replace with your Artifact Registry name
 
 jobs:
   deploy:

@@ -35,8 +35,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t ${GAR_LOCATION}-docker.pkg.dev/${GAR_REPO}/${PROJECT_ID}/${SERVICE}:${{ github.sha }} .
-          docker push ${GAR_LOCATION}-docker.pkg.dev/${GAR_REPO}/${PROJECT_ID}/${SERVICE}:${{ github.sha }}
+          docker build -t ${GAR_LOCATION}-docker.pkg.dev/${PROJECT_ID}/${GAR_REPO}/${SERVICE}:${{ github.sha }} .
+          docker push ${GAR_LOCATION}-docker.pkg.dev/${PROJECT_ID}/${GAR_REPO}/${SERVICE}:${{ github.sha }}
 
       - name: Deploy to Cloud Run
         uses: 'google-github-actions/deploy-cloudrun@v2'

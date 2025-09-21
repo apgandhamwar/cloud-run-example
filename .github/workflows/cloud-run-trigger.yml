@@ -32,6 +32,6 @@ jobs:
             --destination-run-service="my-cloud-run-service" \
             --destination-run-region=us-central1 \
             --event-filters="type=google.cloud.storage.object.v1.finalized" \
-            --event-filters="bucket=ardent-case-465107-c9-my-java-app" \
+            --event-filters="bucket=my-java-app" \
             --service-account=153174629313-compute@developer.gserviceaccount.com \
             --location=us-central1
